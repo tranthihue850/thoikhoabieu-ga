@@ -5,7 +5,7 @@ using System.Text;
 
 namespace ThoiKhoaBieu
 {
-    public class NST //đại diện cho một cá thể độc lập. 1 cá thể là một lời giải cho bài toán
+    public class ClassNhiemSacThe //đại diện cho một cá thể độc lập. 1 cá thể là một lời giải cho bài toán
     {
         //Data- Property
         #region Data
@@ -19,69 +19,69 @@ namespace ThoiKhoaBieu
         // Cau truc NST
         public RWDataExcel dataNST;
         public int[] cacLop;// danh sach cac lop can dc lap thoi khoa bieu
-        public Gen[] gen;
+        public ClassGen[] gen;
         #endregion
         // Method
         #region Method
 
         #region Các hàm khởi tạo
-        public NST()
+        public ClassNhiemSacThe()
         {
         }
-        public NST(int[] lop, RWDataExcel data)// khởi tạo ngẫu nhiên một NST
+        public ClassNhiemSacThe(int[] lop, RWDataExcel data)// khởi tạo ngẫu nhiên một NST
         {
-            ++NST.Count;
-            this.ID = NST.Count;
+            ++ClassNhiemSacThe.Count;
+            this.ID = ClassNhiemSacThe.Count;
             this.nguonGoc = "NST Gốc";
             // khoi tao 
             this.dataNST = data;
             this.cacLop = new int[lop.Length];
             for (int i = 0; i < cacLop.Length; ++i)
                 cacLop[i] = lop[i];
-            this.gen = new Gen[cacLop.Length];
+            this.gen = new ClassGen[cacLop.Length];
             for (int i = 0; i < cacLop.Length; ++i)
-                gen[i] = new Gen(cacLop[i], data);
+                gen[i] = new ClassGen(cacLop[i], data);
 
         }
         // sao chép NST
-        public NST(NST bo)
+        public ClassNhiemSacThe(ClassNhiemSacThe bo)
         {
-            ++NST.Count;
-            this.ID = NST.Count;
+            ++ClassNhiemSacThe.Count;
+            this.ID = ClassNhiemSacThe.Count;
             this.nguonGoc = "Bố :" + bo.ID.ToString();
             //--------copy du lieu tu bo sang con
             dataNST = bo.dataNST;
             this.cacLop = new int[bo.cacLop.Length];
-            this.gen = new Gen[bo.gen.Length];
+            this.gen = new ClassGen[bo.gen.Length];
             for (int i = 0; i < cacLop.Length; ++i)
                 cacLop[i] = bo.cacLop[i];
             for (int i = 0; i < gen.Length; ++i)
-                gen[i] = new Gen(bo.gen[i]);
+                gen[i] = new ClassGen(bo.gen[i]);
         }
         #endregion
 
         #region Hàm thuộc tính di truyền
-        public static NST operator +(NST bo, NST me)//phép lai
+        public static ClassNhiemSacThe operator +(ClassNhiemSacThe bo, ClassNhiemSacThe me)//phép lai
         {
-            NST con = new NST(bo);
+            ClassNhiemSacThe con = new ClassNhiemSacThe(bo);
             con.nguonGoc = "Lai: " + bo.ID.ToString() + "+" + me.ID.ToString();
             //===============================================
             // khoi tao 2 dien lai           
-            int cuoi = NST.ran.Next(bo.gen.Length);
-            int dau = NST.ran.Next(cuoi);
+            int cuoi = ClassNhiemSacThe.ran.Next(bo.gen.Length);
+            int dau = ClassNhiemSacThe.ran.Next(cuoi);
             for (int i = dau; i <= cuoi; ++i)
-                con.gen[i] = new Gen(me.gen[i]);
+                con.gen[i] = new ClassGen(me.gen[i]);
             return con;
         }
         //-----------------------------------
-        public static NST operator !(NST bo)//phép đột biến
+        public static ClassNhiemSacThe operator !(ClassNhiemSacThe bo)//phép đột biến
         {
-            NST con = new NST(bo);
+            ClassNhiemSacThe con = new ClassNhiemSacThe(bo);
             con.nguonGoc = "Đột Biến: " + bo.ID.ToString();
             //===============================================
             // chon 1 gen de dot bien
-            int db = NST.ran.Next(bo.gen.Length);
-            con.gen[db] = new Gen(con.gen[db].maLop, bo.dataNST);
+            int db = ClassNhiemSacThe.ran.Next(bo.gen.Length);
+            con.gen[db] = new ClassGen(con.gen[db].maLop, bo.dataNST);
             return con;
         }
         #endregion
@@ -92,7 +92,7 @@ namespace ThoiKhoaBieu
             this.mucTieu = ts;
             this.mucTieu2 = hocQua1Lan;
             mucTieu3 = trungLichBan;
-            this.doThichNghi = NST.maxDoThichNghi;
+            this.doThichNghi = ClassNhiemSacThe.maxDoThichNghi;
             this.doThichNghi -= ts * 25;
             this.doThichNghi -= hocQua1Lan * 5;
             doThichNghi -= trungLichBan * 10;
@@ -102,7 +102,7 @@ namespace ThoiKhoaBieu
         {
             this.xacSuatSong = ts;
         }
-        public static bool operator &(NST a, NST b)
+        public static bool operator &(ClassNhiemSacThe a, ClassNhiemSacThe b)
         {
             bool ok = true;
             if (a.cacLop.Length != b.cacLop.Length) ok = false;
@@ -131,7 +131,7 @@ namespace ThoiKhoaBieu
                 trung += gen[i].HocQua1Lan();
             return trung;
         }
-        public int TrungLichBan(Busy busy)
+        public int TrungLichBan(ClassBusy busy)
         {
             int trung = 0;
             for (int i = 0; i < cacLop.Length; ++i)

@@ -5,13 +5,13 @@ using System.Text;
 using System.Windows.Forms;
 namespace ThoiKhoaBieu
 {
-    public class QuanThe
+    public class ClassQuanThe
     {
         //Data- Property
         #region Data
         // dữ liệu của quần thể
         private int size, realSize;
-        private NST[] quanThe;
+        private ClassNhiemSacThe[] quanThe;
         private double[] Ps;
         private int[] Ps2;
         private int tsToPs2 = 10000;
@@ -24,23 +24,23 @@ namespace ThoiKhoaBieu
         //đối tượng kết suất
         private RWDataExcel outData, excelData;
         // lich ban giang vien
-        public Busy busy;
+        public ClassBusy busy;
         #endregion
         //----------------------------------------------------------------------------
         // Method
         #region Method
 
         #region Các hàm khởi tạo
-        public QuanThe()
+        public ClassQuanThe()
         { }
-        public QuanThe(int Size, int[] lop, RWDataExcel data, int soNgayHocTrongTuan, int soGioMotBuoi, int soGioMotTiet, double sxLai, double sxDotBien)// sử dụng phép toán khởi tạo ngỗng nhiên
+        public ClassQuanThe(int Size, int[] lop, RWDataExcel data, int soNgayHocTrongTuan, int soGioMotBuoi, int soGioMotTiet, double sxLai, double sxDotBien)// sử dụng phép toán khởi tạo ngỗng nhiên
         {
             // đặt giá trị Count số đếm cá thể trong quần thể=0
-            NST.Count = 0;
+            ClassNhiemSacThe.Count = 0;
             // khởi tạo vùng nhớ cho quần thể
             this.size = Size;
             this.realSize = Size;
-            this.quanThe = new NST[this.size * 3];// số cá thể trong quần thể bùm nổ tối đa gấp 3 lần ban đầu khi xs lai=đột biến=100%
+            this.quanThe = new ClassNhiemSacThe[this.size * 3];// số cá thể trong quần thể bùm nổ tối đa gấp 3 lần ban đầu khi xs lai=đột biến=100%
             this.Pc = sxLai;
             this.Pm = sxDotBien;
             this.Ps = new double[this.size];
@@ -49,15 +49,15 @@ namespace ThoiKhoaBieu
             this.excelData = data;            
             //khởi tạo từng cá thể 
             // khoi tao nhung tham so static 
-            Tiet.SetMaxGio(soGioMotTiet);
-            Ngay.SetMaxGio(soGioMotBuoi);
-            Gen.SetSoNgayHocTrongTuan(soNgayHocTrongTuan);
+            ClassTietHoc.SetMaxGio(soGioMotTiet);
+            ClassNgay.SetMaxGio(soGioMotBuoi);
+            ClassGen.SetSoNgayHocTrongTuan(soNgayHocTrongTuan);
 
             //khoi tao lich ban sau khi da khoi tao cac tham so khac
             CreateTs();
-            busy = new Busy(data);
+            busy = new ClassBusy(data);
             for (int i = 0; i < this.realSize; ++i)
-                quanThe[i] = new NST(lop, data);
+                quanThe[i] = new ClassNhiemSacThe(lop, data);
             // gọi hàm mục tiêu tính độ thích nghi  cho từng cá thể trong quần thể
             HamMucTieu();
 
@@ -152,7 +152,7 @@ namespace ThoiKhoaBieu
                 //viTriBo = Array.BinarySearch(Ps, NST.ran.NextDouble());
                 //if (viTriBo < 0) viTriBo = Math.Abs(viTriBo) - 1;               
                 // Đột biến  
-                viTriBo = NST.ran.Next(this.size);
+                viTriBo = ClassNhiemSacThe.ran.Next(this.size);
                 quanThe[realSize] = !quanThe[viTriBo];
                 ++realSize;
             }
@@ -168,13 +168,13 @@ namespace ThoiKhoaBieu
                 // tìm bố
                 //viTriBo = Array.BinarySearch(Ps, NST.ran.NextDouble());
                 //if (viTriBo < 0) viTriBo = Math.Abs(viTriBo) - 1;
-                viTriBo = NST.ran.Next(this.size);
+                viTriBo = ClassNhiemSacThe.ran.Next(this.size);
                 // tìm mẹ
                 do
                 {
                     //viTriMe = Array.BinarySearch(Ps, NST.ran.NextDouble());
                     //if (viTriMe < 0) viTriMe = Math.Abs(viTriMe) - 1;
-                    viTriMe = NST.ran.Next(this.size);
+                    viTriMe = ClassNhiemSacThe.ran.Next(this.size);
                 } while (viTriBo == viTriMe);
                 // lai tạo                 
                 quanThe[realSize] = quanThe[viTriBo] + quanThe[viTriMe];
@@ -235,7 +235,7 @@ namespace ThoiKhoaBieu
             this.path = pa;
             ++doi;
             KetXuatDuLieuTungDoi();
-            while (quanThe[0].doThichNghi < NST.maxDoThichNghi)
+            while (quanThe[0].doThichNghi < ClassNhiemSacThe.maxDoThichNghi)
             {
                 //++doi;                KetXuatDuLieuTungDoi();
                 SetXacSuatSong();

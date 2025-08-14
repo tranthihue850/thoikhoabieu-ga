@@ -5,24 +5,24 @@ using System.Text;
 
 namespace ThoiKhoaBieu
 {
-    public class Ngay
+    public class ClassNgay
     {
         //Data- Property
         #region Data
         public static int maxGio=6;
-        public Tiet[] tiet;
-        public Tiet[] ssTiet;// dung de so sanh cac tiet trong ngay;
+        public ClassTietHoc[] tiet;
+        public ClassTietHoc[] ssTiet;// dung de so sanh cac tiet trong ngay;
         public int realLength = 0;
         #endregion
         // Method
         #region Method
         #region Các hàm khởi tạo
-        public Ngay(string ban,int gv)
+        public ClassNgay(string ban,int gv)
         {
-            this.tiet = new Tiet[Ngay.maxGio];
-            for (int i = 0; i < Ngay.maxGio; ++i)
+            this.tiet = new ClassTietHoc[ClassNgay.maxGio];
+            for (int i = 0; i < ClassNgay.maxGio; ++i)
                 tiet[i] = null;
-            this.ssTiet = new Tiet[Ngay.maxGio];
+            this.ssTiet = new ClassTietHoc[ClassNgay.maxGio];
             string[] st = ban.Split(',');
             int[] vitri = new int[st.Length];           
             for (int i = 0; i < vitri.Length; ++i)
@@ -32,37 +32,37 @@ namespace ThoiKhoaBieu
                 }
                 catch (Exception ett) { ett.ToString(); }
             Array.Sort(vitri);
-            bool[] ok = new bool[Ngay.maxGio];
+            bool[] ok = new bool[ClassNgay.maxGio];
             for (int i=0;i<vitri .Length ;++i)
                 try
                 {
                     ok[vitri[i]-1] = true;
                 }
                 catch (Exception e) { e.ToString(); }
-            for (int i = 0; i < Ngay.maxGio; ++i)
+            for (int i = 0; i < ClassNgay.maxGio; ++i)
             {
-                if (ok[i]) Add(new Tiet(-1, gv, 1));
-                else Add (new Tiet (-1,-1,1));
+                if (ok[i]) Add(new ClassTietHoc(-1, gv, 1));
+                else Add (new ClassTietHoc (-1,-1,1));
             }
 
         }
-        public Ngay()
+        public ClassNgay()
         {
-            this.tiet = new Tiet[Ngay.maxGio];
-            for (int i = 0; i < Ngay.maxGio; ++i)
+            this.tiet = new ClassTietHoc[ClassNgay.maxGio];
+            for (int i = 0; i < ClassNgay.maxGio; ++i)
                 tiet[i] = null;
-            this.ssTiet = new Tiet[Ngay.maxGio];
+            this.ssTiet = new ClassTietHoc[ClassNgay.maxGio];
 
         }
-        public bool Add(Tiet them)//them 1 Tiet vao mot ngay, neu vuot qua so h toi da phai hoc trong 1 ngay thi khong them dc
+        public bool Add(ClassTietHoc them)//them 1 Tiet vao mot ngay, neu vuot qua so h toi da phai hoc trong 1 ngay thi khong them dc
         {
             bool ok = false;
             int tongGio = 0;
-            for (int i = 0; i < Ngay.maxGio; ++i)
+            for (int i = 0; i < ClassNgay.maxGio; ++i)
                 if (tiet[i] != null) tongGio += tiet[i].soGio;
                 else
                 {
-                    if ((tongGio + them.soGio) <= Ngay.maxGio)
+                    if ((tongGio + them.soGio) <= ClassNgay.maxGio)
                     {
                         tiet[i] = them;
                         ok = true;
@@ -75,7 +75,7 @@ namespace ThoiKhoaBieu
         public void ChangaeOneFirst(int maMonDB,int maGVDB)
         {
             int end = 0;
-            for (int i = 0; i < Ngay.maxGio; ++i)
+            for (int i = 0; i < ClassNgay.maxGio; ++i)
                 if (tiet[i] == null) { end = i; break; }
             if (end > 0)
             {
@@ -84,7 +84,7 @@ namespace ThoiKhoaBieu
                     tiet[0].soGio -= 1;
                     for (int i = end; i > 0; --i)
                         tiet[i] = tiet[i - 1];
-                    tiet[0] = new Tiet(maMonDB, maGVDB, 1);
+                    tiet[0] = new ClassTietHoc(maMonDB, maGVDB, 1);
                 }
                 else
                 {
@@ -93,10 +93,10 @@ namespace ThoiKhoaBieu
                 }
             }
         }
-        public void ChangaeOneLast(Tiet sh)
+        public void ChangaeOneLast(ClassTietHoc sh)
         {
             int end = 0;
-            for (int i = 0; i < Ngay.maxGio; ++i)
+            for (int i = 0; i < ClassNgay.maxGio; ++i)
                 if (tiet[i] == null) { end = i; break; }
             if (end > 0)
             {
@@ -112,7 +112,7 @@ namespace ThoiKhoaBieu
         }
         public void SetRealLength()
         {
-            for (int i = 0; i < Ngay.maxGio; ++i)
+            for (int i = 0; i < ClassNgay.maxGio; ++i)
                 if (tiet[i] != null) this.realLength = i;
                 else break;
             ++this.realLength;
@@ -121,7 +121,7 @@ namespace ThoiKhoaBieu
         public void CreateCompareTiet() // ham duoi ra de so sanh
         {
             int j = -1;
-            for (int i = 0; i < Ngay.maxGio; ++i)
+            for (int i = 0; i < ClassNgay.maxGio; ++i)
             {
                 if (tiet[i] != null)
                 {
@@ -141,17 +141,17 @@ namespace ThoiKhoaBieu
         public string Show()
         {
             string st = "";
-            for (int i = 0; i < Ngay.maxGio; ++i)
+            for (int i = 0; i < ClassNgay.maxGio; ++i)
                 if (tiet[i] != null) st += tiet[i].ShowAll() + ", ";
                 else break;
             st += "\n";
-            for (int i = 0; i < Ngay.maxGio; ++i)
+            for (int i = 0; i < ClassNgay.maxGio; ++i)
                 if (ssTiet[i] != null) st += ssTiet[i].Show() + ", ";
                 else break;
             return st;
 
         }
-        public static bool operator &(Ngay a, Ngay b) // so sanh 3 tham so
+        public static bool operator &(ClassNgay a, ClassNgay b) // so sanh 3 tham so
         {
             bool ok = true;
             if (a.tiet.Length != b.tiet.Length) ok = false;
@@ -171,7 +171,7 @@ namespace ThoiKhoaBieu
                 else break;
             return ok;
         }
-        public static int operator |(Ngay a, Ngay b) // so sanh 2 tham so
+        public static int operator |(ClassNgay a, ClassNgay b) // so sanh 2 tham so
         {
             int trungNhau = 0;
             a.CreateCompareTiet();
@@ -185,7 +185,7 @@ namespace ThoiKhoaBieu
          
             return trungNhau;
         }
-        public static int operator ^(Ngay a, Ngay b) // so sanh 1 tham so
+        public static int operator ^(ClassNgay a, ClassNgay b) // so sanh 1 tham so
         {
             int trungNhau = 0;
             a.CreateCompareTiet();
@@ -205,7 +205,7 @@ namespace ThoiKhoaBieu
                 if (tiet[k] == null) break;
             for (int i = 0; i < k - 1; ++i)
                 for (int j = i + 1; j < k; ++j)
-                    if ((tiet[i] | tiet[j])&&((tiet[i].soGio +tiet[j].soGio )>Tiet.maxGio)) ++trung;
+                    if ((tiet[i] | tiet[j])&&((tiet[i].soGio +tiet[j].soGio )>ClassTietHoc.maxGio)) ++trung;
             return trung;
         }
         #endregion

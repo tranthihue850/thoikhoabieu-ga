@@ -6,13 +6,13 @@ using System.Windows.Forms;
 
 namespace ThoiKhoaBieu
 {
-    public class Gen
+    public class ClassGen
     // một gen tương ứng  với một thời khóa biểu của một lớp 
     {
         //Data- Property
         #region Data
         public static int soNgay;// số ngày học trong tuần         
-        public Ngay[] ngay;
+        public ClassNgay[] ngay;
         public int maLop;
         public int[] mon;// số h phải học của từng môn trong tuần (mã môn chính là index số h phải học của từng môn trong tuần)
 
@@ -20,25 +20,25 @@ namespace ThoiKhoaBieu
         // Method
         #region Method
         #region Các hàm khởi tạo
-        public Gen(RWDataExcel data,int maGv)
+        public ClassGen(RWDataExcel data,int maGv)
         {
-            ngay = new Ngay[Gen.soNgay];
-            for (int i=0;i<Gen .soNgay ;++i)
-                ngay [i]=new Ngay (data .lichBanGiangVien [maGv ,i],maGv );
+            ngay = new ClassNgay[ClassGen.soNgay];
+            for (int i=0;i<ClassGen .soNgay ;++i)
+                ngay [i]=new ClassNgay (data .lichBanGiangVien [maGv ,i],maGv );
         }
-        public Gen(int malop, RWDataExcel data)// khoi tao  ngau nhien mot gen
+        public ClassGen(int malop, RWDataExcel data)// khoi tao  ngau nhien mot gen
         {           
             this.maLop = malop;
-            this.ngay = new Ngay[Gen.soNgay];
-            for (int i = 0; i < Gen.soNgay; ++i)
-                ngay[i] = new Ngay();
+            this.ngay = new ClassNgay[ClassGen.soNgay];
+            for (int i = 0; i < ClassGen.soNgay; ++i)
+                ngay[i] = new ClassNgay();
             this.mon = new int[data.soMon];
             for (int i = 0; i < mon.Length; ++i)
                 mon[i] = data.qhLopMon[malop, i];
             // khoi tao ngong nhien mot thoi khoa bieu cho mot lop
             //mang cac tiet phai hoc trong tuan
             int tongSoTiet = -1;
-            Tiet[] phaiHoc = new Tiet[Ngay.maxGio * Gen.soNgay*2];
+            ClassTietHoc[] phaiHoc = new ClassTietHoc[ClassNgay.maxGio * ClassGen.soNgay*2];
             // MessageBox .Show ((Ngay.maxGio * Gen.soNgay).ToString ());
             // bat dau tim so tiet phai hoc trong mot tuan cua lop
             bool ok;
@@ -52,11 +52,11 @@ namespace ThoiKhoaBieu
                         {
                             ok = true;
                             // khoi tao cac tiet phai hoc
-                            int[] cacTiet = Split(mon[i], Tiet.maxGio);
+                            int[] cacTiet = Split(mon[i], ClassTietHoc.maxGio);
                             for (int k = 0; k < cacTiet.Length; ++k)
                             {
                                 ++tongSoTiet;
-                                phaiHoc[tongSoTiet] = new Tiet(i, j, cacTiet[k]);
+                                phaiHoc[tongSoTiet] = new ClassTietHoc(i, j, cacTiet[k]);
                             }
                             break;
                         }
@@ -74,21 +74,21 @@ namespace ThoiKhoaBieu
             int tongPhaiHocTrongTuan = 0;
             for (int i = 0; i < this.mon.Length; ++i)
                 tongPhaiHocTrongTuan += mon[i];
-            if (tongPhaiHocTrongTuan > (Gen.soNgay * Ngay.maxGio))
+            if (tongPhaiHocTrongTuan > (ClassGen.soNgay * ClassNgay.maxGio))
                 MessageBox.Show("Số lượng các giời phải học là quá lớn để học trong 1 tuần", "Thông báo");
 
             // tao 1 thu tu cac mon ngau nhien phai hoc
             int[] arraySort = new int[tongSoTiet + 1];
-            for (int i = 0; i < arraySort.Length; ++i) arraySort[i] = NST.ran.Next();
+            for (int i = 0; i < arraySort.Length; ++i) arraySort[i] = ClassNhiemSacThe.ran.Next();
             Array.Sort(arraySort, phaiHoc);
 
             // dua cac mon theo thu tu vao thoi khoa bieu
             int daHoc = -1;
           
                 daHoc = -1;
-                for (int i = 0; i < Gen.soNgay; ++i)
+                for (int i = 0; i < ClassGen.soNgay; ++i)
                 {
-                    ngay[i] = new Ngay();
+                    ngay[i] = new ClassNgay();
                     while ((daHoc< tongSoTiet) && (ngay[i].Add(phaiHoc[daHoc + 1])))  // điều kiện để dừng nếu ko thêm số lần dạy vào từng ngày trong tkb
                         ++daHoc;
                 }
@@ -97,32 +97,32 @@ namespace ThoiKhoaBieu
              // khoi tao cac tiet phai hoc them lan nua
              for (int i = daHoc + 1; i <= tongSoTiet; ++i)
              {
-                 int[] cacTiet = Split(phaiHoc [i].soGio, Tiet.maxGio-1);
+                 int[] cacTiet = Split(phaiHoc [i].soGio, ClassTietHoc.maxGio-1);
                  int newMon = phaiHoc[i].maMon;
                  int newGv = phaiHoc[i].maGiangVien;
                  for (int k = 0; k < cacTiet.Length; ++k)
                  {
                      ++newEnd;
-                     phaiHoc[newEnd] = new Tiet(newMon  ,newGv, cacTiet[k]);
+                     phaiHoc[newEnd] = new ClassTietHoc(newMon  ,newGv, cacTiet[k]);
                  }
              }
             //xep them lan nua
              daHoc = tongSoTiet;
-             for (int i = 0; i < Gen.soNgay; ++i)
+             for (int i = 0; i < ClassGen.soNgay; ++i)
              {                
                  while ((daHoc < newEnd) && (ngay[i].Add(phaiHoc[daHoc + 1])))  // điều kiện để dừng nếu ko thêm số lần dạy vào từng ngày trong tkb
                      ++daHoc;
              }
              if (daHoc <newEnd)   MessageBox.Show("Không thể xếp lịch với quy định đã đưa vào, hãy điều chỉnh tham số đầu vào ", "Thông báo");
-             int[] array = new int[Gen.soNgay ];
-             for (int i = 0; i < array.Length; ++i) array[i] = NST.ran.Next();
+             int[] array = new int[ClassGen.soNgay ];
+             for (int i = 0; i < array.Length; ++i) array[i] = ClassNhiemSacThe.ran.Next();
              Array.Sort(array, ngay);
              // tim mon chao co vut len dau:
              if (ngay[0].tiet[0] != null)
              {
                  int firstMaMon = ngay[0].tiet[0].maMon;
                  int firstMaGv = ngay[0].tiet[0].maGiangVien;
-                 for (int i = 0; i < Gen.soNgay; ++i)
+                 for (int i = 0; i < ClassGen.soNgay; ++i)
                  {
                      ngay[i].SetRealLength();
                      for (int j = 0; j < ngay[i].realLength; ++j)
@@ -158,20 +158,20 @@ namespace ThoiKhoaBieu
                          if (result == "L6")
                          {
                              ngay[0].ChangaeOneFirst(ngay[i].tiet[j].maMon, ngay[i].tiet[j].maGiangVien);
-                             ngay[i].tiet[j] = new Tiet(firstMaMon, firstMaGv, 1);
+                             ngay[i].tiet[j] = new ClassTietHoc(firstMaMon, firstMaGv, 1);
                          }
                      }
                  }
              }
-             Ngay tg;
+             ClassNgay tg;
              tg = ngay[0];
              ngay[0] = ngay[4];
              ngay[4] = tg;
              int end = 0;
-             for (int i = 0; i < Ngay.maxGio; ++i)
+             for (int i = 0; i < ClassNgay.maxGio; ++i)
                  if (ngay[4].tiet[i] != null) end = i;
                  else break;
-             Tiet tgt;
+             ClassTietHoc tgt;
              tgt = ngay[4].tiet[0];
              ngay[4].tiet[0] = ngay[4].tiet[end];
              ngay[4].tiet[end] = tgt;
@@ -180,7 +180,7 @@ namespace ThoiKhoaBieu
              {
                  int firstMaMon = ngay[0].tiet[0].maMon;
                  int firstMaGv = ngay[0].tiet[0].maGiangVien;
-                 for (int i = 0; i < Gen.soNgay; ++i)
+                 for (int i = 0; i < ClassGen.soNgay; ++i)
                  {
                      ngay[i].SetRealLength();
                      for (int j = 0; j < ngay[i].realLength; ++j)
@@ -231,23 +231,23 @@ namespace ThoiKhoaBieu
                          if (result == "F2")
                          {
                              ngay[0].ChangaeOneFirst(ngay[i].tiet[j].maMon, ngay[i].tiet[j].maGiangVien);
-                             ngay[i].tiet[j] = new Tiet(firstMaMon, firstMaGv, 1);
+                             ngay[i].tiet[j] = new ClassTietHoc(firstMaMon, firstMaGv, 1);
                          }
                      }
                  }
              }
           
         }
-        public Gen(Gen bo)// ham sao chep gen
+        public ClassGen(ClassGen bo)// ham sao chep gen
         {
             this.maLop = bo.maLop;
-            this.ngay = new Ngay[Gen.soNgay];
+            this.ngay = new ClassNgay[ClassGen.soNgay];
             this.mon = new int[bo.mon.Length];
             for (int i = 0; i < mon.Length; ++i)
                 mon[i] = bo.mon[i];
-            for (int i = 0; i < Gen.soNgay; ++i)
+            for (int i = 0; i < ClassGen.soNgay; ++i)
             {
-                ngay[i] = new Ngay();
+                ngay[i] = new ClassNgay();
                 for (int j = 0; j < bo.ngay[i].tiet.Length; ++j)
                     if (bo.ngay[i].tiet[j] != null) ngay[i].Add(bo.ngay[i].tiet[j]);
             }
@@ -270,7 +270,7 @@ namespace ThoiKhoaBieu
         public string Show()
         {
             string st = "";
-            for (int i = 0; i < Gen.soNgay; ++i)
+            for (int i = 0; i < ClassGen.soNgay; ++i)
             {
                 st += "Thu " + (i + 2).ToString() + " : ";
 
@@ -300,26 +300,26 @@ namespace ThoiKhoaBieu
         }
 
         #region Kiểm tra sự trùng lặp giữa các lớp
-        public static bool operator &(Gen a, Gen b)
+        public static bool operator &(ClassGen a, ClassGen b)
         {
             bool ok = true;
-            for (int i = 0; i < Gen.soNgay; ++i)
+            for (int i = 0; i < ClassGen.soNgay; ++i)
                 if ((a.ngay[i] & b.ngay[i]) == false) { ok = false; break; }
             return ok;
 
         }
-        public static int operator |(Gen a, Gen b)// tra lai so h trung lap giua cac loop
+        public static int operator |(ClassGen a, ClassGen b)// tra lai so h trung lap giua cac loop
         {
             int trungNhau = 0;
-            for (int i = 0; i < Gen.soNgay; ++i)
+            for (int i = 0; i < ClassGen.soNgay; ++i)
                 trungNhau += a.ngay[i] | b.ngay[i];
             return trungNhau;
 
         }
-        public static int operator ^(Gen a, Gen b)// tra lai su trung lap lich ban
+        public static int operator ^(ClassGen a, ClassGen b)// tra lai su trung lap lich ban
         {
             int trungNhau = 0;
-            for (int i = 0; i < Gen.soNgay; ++i)
+            for (int i = 0; i < ClassGen.soNgay; ++i)
                 trungNhau += a.ngay[i] ^ b.ngay[i];
             return trungNhau;
 
@@ -328,7 +328,7 @@ namespace ThoiKhoaBieu
         public int HocQua1Lan()
         {
             int trung = 0;
-            for (int i = 0; i < Gen.soNgay; ++i)
+            for (int i = 0; i < ClassGen.soNgay; ++i)
                 trung += this.ngay[i].HocQua1Lan();
             return trung;
         }

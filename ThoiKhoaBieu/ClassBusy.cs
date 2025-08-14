@@ -5,17 +5,17 @@ using System.Text;
 
 namespace ThoiKhoaBieu
 {
-    public class Busy
+    public class ClassBusy
     {
         public int soGv;
-        public Gen[] lichBan;
-        public Busy(RWDataExcel data)
+        public ClassGen[] lichBan;
+        public ClassBusy(RWDataExcel data)
         {
             soGv = data.soGv;
-            lichBan = new Gen[soGv];
-            for (int i = 0; i < soGv; ++i) lichBan[i] = new Gen(data,i);
+            lichBan = new ClassGen[soGv];
+            for (int i = 0; i < soGv; ++i) lichBan[i] = new ClassGen(data,i);
         }
-        public int TrungLichBan(Gen a)
+        public int TrungLichBan(ClassGen a)
         {
             int trung = 0;
             for (int i = 0; i < soGv; ++i)

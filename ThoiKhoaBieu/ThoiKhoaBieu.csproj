@@ -46,22 +46,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Busy.cs" />
-    <Compile Include="CaThe.cs" />
+    <Compile Include="ClassBusy.cs" />
+    <Compile Include="ClassCaThe.cs" />
     <Compile Include="frmMain.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="Gen.cs" />
-    <Compile Include="Ngay.cs" />
-    <Compile Include="NST.cs" />
+    <Compile Include="ClassGen.cs" />
+    <Compile Include="ClassNgay.cs" />
+    <Compile Include="ClassNhiemSacThe.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="QuanThe.cs" />
+    <Compile Include="ClassQuanThe.cs" />
     <Compile Include="RWDataExcel.cs" />
-    <Compile Include="Tiet.cs" />
+    <Compile Include="ClassTietHoc.cs" />
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
     </EmbeddedResource>

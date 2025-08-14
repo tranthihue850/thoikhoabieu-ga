@@ -774,7 +774,7 @@ namespace ThoiKhoaBieu
 
             ++conTro;
         }
-        public void OutPutTitleEndOfData(NST a, RWDataExcel data)
+        public void OutPutTitleEndOfData(ClassNhiemSacThe a, RWDataExcel data)
         {
             this.conTro = 1;
             #region Khởi tạo tiêu đề, ghi thông số vào file excel
@@ -807,8 +807,8 @@ namespace ThoiKhoaBieu
                 range.Font.Name = "Times New Roman";
                 range.set_Item(1, 1, "Lớp: " + data.lop[a.gen[i].maLop]);
                 ++conTro;
-                range = xSheet.get_Range("C" + conTro.ToString(), ChangeIntToStringCel(2 + Gen.soNgay) + conTro.ToString());
-                for (int j = 0; j < Gen.soNgay; ++j)
+                range = xSheet.get_Range("C" + conTro.ToString(), ChangeIntToStringCel(2 + ClassGen.soNgay) + conTro.ToString());
+                for (int j = 0; j < ClassGen.soNgay; ++j)
                 {
                     range.Interior.ColorIndex = 8;//22 40
                     range.Font.Bold = true;
@@ -820,7 +820,7 @@ namespace ThoiKhoaBieu
                 }
                 ++conTro;
                 range = xSheet.get_Range("C" + conTro.ToString(), "C" + conTro.ToString());
-                for (int j = 0; j < Gen.soNgay; ++j)
+                for (int j = 0; j < ClassGen.soNgay; ++j)
                 {
                     for (int k = 0; k < a.gen[i].ngay[j].tiet.Length; ++k)
                         if (a.gen[i].ngay[j].tiet[k] != null)
@@ -853,8 +853,8 @@ namespace ThoiKhoaBieu
                 range.Font.Name = "Times New Roman";
                 range.set_Item(1, 1, "Giảng viên: " + data.giangVien[i]);
                 ++conTro;
-                range = xSheet.get_Range("C" + conTro.ToString(), ChangeIntToStringCel(2 + Gen.soNgay) + conTro.ToString());
-                for (int j = 0; j < Gen.soNgay; ++j)
+                range = xSheet.get_Range("C" + conTro.ToString(), ChangeIntToStringCel(2 + ClassGen.soNgay) + conTro.ToString());
+                for (int j = 0; j < ClassGen.soNgay; ++j)
                 {
                     range.Interior.ColorIndex = 8;//22 40
                     range.Font.Bold = true;
@@ -866,7 +866,7 @@ namespace ThoiKhoaBieu
                 }
                 ++conTro;
                 range = xSheet.get_Range("C" + conTro.ToString(), "C" + conTro.ToString());
-                for (int j = 0; j < Gen.soNgay; ++j)
+                for (int j = 0; j < ClassGen.soNgay; ++j)
                 {
                     int tg = 0;
                     for (int k = 0; k < a.gen.Length; ++k)

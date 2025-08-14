@@ -5,7 +5,7 @@ using System.Text;
 
 namespace ThoiKhoaBieu
 {
-    public class Tiet
+    public class ClassTietHoc
     {
         //Data- Property
         #region Data
@@ -16,7 +16,7 @@ namespace ThoiKhoaBieu
         // Method
         #region Method
         #region Các hàm khởi tạo
-        public Tiet(int mon, int giangvien, int gio)// khoi tao  ngau nhien mot gen
+        public ClassTietHoc(int mon, int giangvien, int gio)// khoi tao  ngau nhien mot gen
         {
             this.maMon = mon;
             this.maGiangVien = giangvien;
@@ -31,16 +31,16 @@ namespace ThoiKhoaBieu
 
 
         #region Các hàm hỗ trợ
-        public static bool operator &(Tiet a, Tiet b)//so sanh 2 doi tuong cua lop Tiet
+        public static bool operator &(ClassTietHoc a, ClassTietHoc b)//so sanh 2 doi tuong cua lop Tiet
         {
 
             return (a.maMon == b.maMon) && (a.maGiangVien == b.maGiangVien) && (a.soGio == b.soGio);
         }
-        public static bool operator |(Tiet a, Tiet b)// so sanh bo qua so gio
+        public static bool operator |(ClassTietHoc a, ClassTietHoc b)// so sanh bo qua so gio
         {
             return (a.maMon == b.maMon) && (a.maGiangVien == b.maGiangVien);
         }
-        public static bool operator ^(Tiet a,Tiet b) // chi so sanh giang vien 
+        public static bool operator ^(ClassTietHoc a,ClassTietHoc b) // chi so sanh giang vien 
         {
             return (a.maGiangVien ==b.maGiangVien );
         }

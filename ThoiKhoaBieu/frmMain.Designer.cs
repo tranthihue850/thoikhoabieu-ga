@@ -559,7 +559,7 @@
             this.Controls.Add(this.flowLayoutPanel2);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmMain";
-            this.Text = "Ứng dụng thuật toán Gen di truyền (GA)";
+            this.Text = "Ứng dụng thuật toán Gen di truyền (GA) trong sắp xếp thời khóa biểu";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.flowLayoutPanel2.ResumeLayout(false);
             this.tabControlData.ResumeLayout(false);

@@ -1,46 +1,46 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\De An Tot nghiep\\ThoiKhoaBieu\\",
+  "WorkspaceRootPath": "D:\\A De An Tot nghiep\\thoikhoabieu-ga\\ThoiKhoaBieu\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F1947C41-B4B3-4FEC-AD2B-08628B1489B6}|ThoiKhoaBieu.csproj|D:\\De An Tot nghiep\\ThoiKhoaBieu\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{F1947C41-B4B3-4FEC-AD2B-08628B1489B6}|ThoiKhoaBieu.csproj|d:\\a de an tot nghiep\\thoikhoabieu-ga\\thoikhoabieu\\classquanthe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1947C41-B4B3-4FEC-AD2B-08628B1489B6}|ThoiKhoaBieu.csproj|solutionrelative:classquanthe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1947C41-B4B3-4FEC-AD2B-08628B1489B6}|ThoiKhoaBieu.csproj|d:\\a de an tot nghiep\\thoikhoabieu-ga\\thoikhoabieu\\classnhiemsacthe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1947C41-B4B3-4FEC-AD2B-08628B1489B6}|ThoiKhoaBieu.csproj|solutionrelative:classnhiemsacthe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1947C41-B4B3-4FEC-AD2B-08628B1489B6}|ThoiKhoaBieu.csproj|d:\\a de an tot nghiep\\thoikhoabieu-ga\\thoikhoabieu\\classcathe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1947C41-B4B3-4FEC-AD2B-08628B1489B6}|ThoiKhoaBieu.csproj|solutionrelative:classcathe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1947C41-B4B3-4FEC-AD2B-08628B1489B6}|ThoiKhoaBieu.csproj|d:\\a de an tot nghiep\\thoikhoabieu-ga\\thoikhoabieu\\classtiethoc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1947C41-B4B3-4FEC-AD2B-08628B1489B6}|ThoiKhoaBieu.csproj|solutionrelative:classtiethoc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1947C41-B4B3-4FEC-AD2B-08628B1489B6}|ThoiKhoaBieu.csproj|d:\\a de an tot nghiep\\thoikhoabieu-ga\\thoikhoabieu\\classbusy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1947C41-B4B3-4FEC-AD2B-08628B1489B6}|ThoiKhoaBieu.csproj|solutionrelative:classbusy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1947C41-B4B3-4FEC-AD2B-08628B1489B6}|ThoiKhoaBieu.csproj|d:\\a de an tot nghiep\\thoikhoabieu-ga\\thoikhoabieu\\classngay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1947C41-B4B3-4FEC-AD2B-08628B1489B6}|ThoiKhoaBieu.csproj|solutionrelative:classngay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1947C41-B4B3-4FEC-AD2B-08628B1489B6}|ThoiKhoaBieu.csproj|D:\\A De An Tot nghiep\\thoikhoabieu-ga\\ThoiKhoaBieu\\rwdataexcel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1947C41-B4B3-4FEC-AD2B-08628B1489B6}|ThoiKhoaBieu.csproj|solutionrelative:rwdataexcel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1947C41-B4B3-4FEC-AD2B-08628B1489B6}|ThoiKhoaBieu.csproj|d:\\a de an tot nghiep\\thoikhoabieu-ga\\thoikhoabieu\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{F1947C41-B4B3-4FEC-AD2B-08628B1489B6}|ThoiKhoaBieu.csproj|solutionrelative:frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F1947C41-B4B3-4FEC-AD2B-08628B1489B6}|ThoiKhoaBieu.csproj|d:\\de an tot nghiep\\thoikhoabieu\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F1947C41-B4B3-4FEC-AD2B-08628B1489B6}|ThoiKhoaBieu.csproj|D:\\A De An Tot nghiep\\thoikhoabieu-ga\\ThoiKhoaBieu\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F1947C41-B4B3-4FEC-AD2B-08628B1489B6}|ThoiKhoaBieu.csproj|solutionrelative:frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F1947C41-B4B3-4FEC-AD2B-08628B1489B6}|ThoiKhoaBieu.csproj|D:\\De An Tot nghiep\\ThoiKhoaBieu\\nst.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F1947C41-B4B3-4FEC-AD2B-08628B1489B6}|ThoiKhoaBieu.csproj|solutionrelative:nst.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F1947C41-B4B3-4FEC-AD2B-08628B1489B6}|ThoiKhoaBieu.csproj|D:\\De An Tot nghiep\\ThoiKhoaBieu\\gen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F1947C41-B4B3-4FEC-AD2B-08628B1489B6}|ThoiKhoaBieu.csproj|solutionrelative:gen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F1947C41-B4B3-4FEC-AD2B-08628B1489B6}|ThoiKhoaBieu.csproj|D:\\De An Tot nghiep\\ThoiKhoaBieu\\cathe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F1947C41-B4B3-4FEC-AD2B-08628B1489B6}|ThoiKhoaBieu.csproj|solutionrelative:cathe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F1947C41-B4B3-4FEC-AD2B-08628B1489B6}|ThoiKhoaBieu.csproj|D:\\De An Tot nghiep\\ThoiKhoaBieu\\busy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F1947C41-B4B3-4FEC-AD2B-08628B1489B6}|ThoiKhoaBieu.csproj|solutionrelative:busy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F1947C41-B4B3-4FEC-AD2B-08628B1489B6}|ThoiKhoaBieu.csproj|D:\\De An Tot nghiep\\ThoiKhoaBieu\\quanthe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F1947C41-B4B3-4FEC-AD2B-08628B1489B6}|ThoiKhoaBieu.csproj|solutionrelative:quanthe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F1947C41-B4B3-4FEC-AD2B-08628B1489B6}|ThoiKhoaBieu.csproj|D:\\De An Tot nghiep\\ThoiKhoaBieu\\tiet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F1947C41-B4B3-4FEC-AD2B-08628B1489B6}|ThoiKhoaBieu.csproj|solutionrelative:tiet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F1947C41-B4B3-4FEC-AD2B-08628B1489B6}|ThoiKhoaBieu.csproj|D:\\De An Tot nghiep\\ThoiKhoaBieu\\ngay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F1947C41-B4B3-4FEC-AD2B-08628B1489B6}|ThoiKhoaBieu.csproj|solutionrelative:ngay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F1947C41-B4B3-4FEC-AD2B-08628B1489B6}|ThoiKhoaBieu.csproj|D:\\De An Tot nghiep\\ThoiKhoaBieu\\rwdataexcel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F1947C41-B4B3-4FEC-AD2B-08628B1489B6}|ThoiKhoaBieu.csproj|solutionrelative:rwdataexcel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F1947C41-B4B3-4FEC-AD2B-08628B1489B6}|ThoiKhoaBieu.csproj|d:\\a de an tot nghiep\\thoikhoabieu-ga\\thoikhoabieu\\classgen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1947C41-B4B3-4FEC-AD2B-08628B1489B6}|ThoiKhoaBieu.csproj|solutionrelative:classgen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,20 +50,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "NST.cs",
-              "DocumentMoniker": "D:\\De An Tot nghiep\\ThoiKhoaBieu\\NST.cs",
-              "RelativeDocumentMoniker": "NST.cs",
-              "ToolTip": "D:\\De An Tot nghiep\\ThoiKhoaBieu\\NST.cs",
-              "RelativeToolTip": "NST.cs",
-              "ViewState": "AQIAAKAAAAAAAAAAAAAawLEAAAAnAAAA",
+              "DocumentIndex": 1,
+              "Title": "ClassNhiemSacThe.cs",
+              "DocumentMoniker": "D:\\A De An Tot nghiep\\thoikhoabieu-ga\\ThoiKhoaBieu\\ClassNhiemSacThe.cs",
+              "RelativeDocumentMoniker": "ClassNhiemSacThe.cs",
+              "ToolTip": "D:\\A De An Tot nghiep\\thoikhoabieu-ga\\ThoiKhoaBieu\\ClassNhiemSacThe.cs",
+              "RelativeToolTip": "ClassNhiemSacThe.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-30T14:56:35.262Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
@@ -71,59 +72,63 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Tiet.cs",
-              "DocumentMoniker": "D:\\De An Tot nghiep\\ThoiKhoaBieu\\Tiet.cs",
-              "RelativeDocumentMoniker": "Tiet.cs",
-              "ToolTip": "D:\\De An Tot nghiep\\ThoiKhoaBieu\\Tiet.cs",
-              "RelativeToolTip": "Tiet.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAWAAAA",
+              "DocumentIndex": 5,
+              "Title": "ClassNgay.cs",
+              "DocumentMoniker": "D:\\A De An Tot nghiep\\thoikhoabieu-ga\\ThoiKhoaBieu\\ClassNgay.cs",
+              "RelativeDocumentMoniker": "ClassNgay.cs",
+              "ToolTip": "D:\\A De An Tot nghiep\\thoikhoabieu-ga\\ThoiKhoaBieu\\ClassNgay.cs",
+              "RelativeToolTip": "ClassNgay.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-30T14:59:29.185Z"
+              "WhenOpened": "2025-06-30T14:58:29.417Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Ngay.cs",
-              "DocumentMoniker": "D:\\De An Tot nghiep\\ThoiKhoaBieu\\Ngay.cs",
-              "RelativeDocumentMoniker": "Ngay.cs",
-              "ToolTip": "D:\\De An Tot nghiep\\ThoiKhoaBieu\\Ngay.cs",
-              "RelativeToolTip": "Ngay.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAALAAAA",
+              "DocumentIndex": 0,
+              "Title": "ClassQuanThe.cs",
+              "DocumentMoniker": "D:\\A De An Tot nghiep\\thoikhoabieu-ga\\ThoiKhoaBieu\\ClassQuanThe.cs",
+              "RelativeDocumentMoniker": "ClassQuanThe.cs",
+              "ToolTip": "D:\\A De An Tot nghiep\\thoikhoabieu-ga\\ThoiKhoaBieu\\ClassQuanThe.cs",
+              "RelativeToolTip": "ClassQuanThe.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAQwAcAAAALAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-30T14:58:29.417Z"
+              "WhenOpened": "2025-06-30T14:59:38.824Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ClassBusy.cs",
+              "DocumentMoniker": "D:\\A De An Tot nghiep\\thoikhoabieu-ga\\ThoiKhoaBieu\\ClassBusy.cs",
+              "RelativeDocumentMoniker": "ClassBusy.cs",
+              "ToolTip": "D:\\A De An Tot nghiep\\thoikhoabieu-ga\\ThoiKhoaBieu\\ClassBusy.cs",
+              "RelativeToolTip": "ClassBusy.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAcAAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-30T15:00:30.24Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Gen.cs",
-              "DocumentMoniker": "D:\\De An Tot nghiep\\ThoiKhoaBieu\\Gen.cs",
-              "RelativeDocumentMoniker": "Gen.cs",
-              "ToolTip": "D:\\De An Tot nghiep\\ThoiKhoaBieu\\Gen.cs",
-              "RelativeToolTip": "Gen.cs",
-              "ViewState": "AQIAAIUAAAAAAAAAAAAawI4AAAAgAAAA",
+              "Title": "ClassTietHoc.cs",
+              "DocumentMoniker": "D:\\A De An Tot nghiep\\thoikhoabieu-ga\\ThoiKhoaBieu\\ClassTietHoc.cs",
+              "RelativeDocumentMoniker": "ClassTietHoc.cs",
+              "ToolTip": "D:\\A De An Tot nghiep\\thoikhoabieu-ga\\ThoiKhoaBieu\\ClassTietHoc.cs",
+              "RelativeToolTip": "ClassTietHoc.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAAADkAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-30T14:57:46.136Z"
+              "WhenOpened": "2025-06-30T14:59:29.185Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "RWDataExcel.cs",
-              "DocumentMoniker": "D:\\De An Tot nghiep\\ThoiKhoaBieu\\RWDataExcel.cs",
-              "RelativeDocumentMoniker": "RWDataExcel.cs",
-              "ToolTip": "D:\\De An Tot nghiep\\ThoiKhoaBieu\\RWDataExcel.cs",
-              "RelativeToolTip": "RWDataExcel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAWAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-29T03:08:19.754Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 8,
               "Title": "frmMain.cs",
-              "DocumentMoniker": "D:\\De An Tot nghiep\\ThoiKhoaBieu\\frmMain.cs",
+              "DocumentMoniker": "D:\\A De An Tot nghiep\\thoikhoabieu-ga\\ThoiKhoaBieu\\frmMain.cs",
               "RelativeDocumentMoniker": "frmMain.cs",
-              "ToolTip": "D:\\De An Tot nghiep\\ThoiKhoaBieu\\frmMain.cs",
+              "ToolTip": "D:\\A De An Tot nghiep\\thoikhoabieu-ga\\ThoiKhoaBieu\\frmMain.cs",
               "RelativeToolTip": "frmMain.cs",
               "ViewState": "AQIAAHcBAAAAAAAAAAAiwIgBAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -132,11 +137,37 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
+              "Title": "ClassCaThe.cs",
+              "DocumentMoniker": "D:\\A De An Tot nghiep\\thoikhoabieu-ga\\ThoiKhoaBieu\\ClassCaThe.cs",
+              "RelativeDocumentMoniker": "ClassCaThe.cs",
+              "ToolTip": "D:\\A De An Tot nghiep\\thoikhoabieu-ga\\ThoiKhoaBieu\\ClassCaThe.cs",
+              "RelativeToolTip": "ClassCaThe.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-30T15:00:29.66Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ClassGen.cs",
+              "DocumentMoniker": "D:\\A De An Tot nghiep\\thoikhoabieu-ga\\ThoiKhoaBieu\\ClassGen.cs",
+              "RelativeDocumentMoniker": "ClassGen.cs",
+              "ToolTip": "D:\\A De An Tot nghiep\\thoikhoabieu-ga\\ThoiKhoaBieu\\ClassGen.cs",
+              "RelativeToolTip": "ClassGen.cs",
+              "ViewState": "AQIAAIUAAAAAAAAAAAAawI4AAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-30T14:57:46.136Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "frmMain.cs [Design]",
-              "DocumentMoniker": "D:\\De An Tot nghiep\\ThoiKhoaBieu\\frmMain.cs",
+              "DocumentMoniker": "D:\\A De An Tot nghiep\\thoikhoabieu-ga\\ThoiKhoaBieu\\frmMain.cs",
               "RelativeDocumentMoniker": "frmMain.cs",
-              "ToolTip": "D:\\De An Tot nghiep\\ThoiKhoaBieu\\frmMain.cs [Design]",
+              "ToolTip": "D:\\A De An Tot nghiep\\thoikhoabieu-ga\\ThoiKhoaBieu\\frmMain.cs [Design]",
               "RelativeToolTip": "frmMain.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-29T02:22:07.796Z",
@@ -145,38 +176,15 @@
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "QuanThe.cs",
-              "DocumentMoniker": "D:\\De An Tot nghiep\\ThoiKhoaBieu\\QuanThe.cs",
-              "RelativeDocumentMoniker": "QuanThe.cs",
-              "ToolTip": "D:\\De An Tot nghiep\\ThoiKhoaBieu\\QuanThe.cs",
-              "RelativeToolTip": "QuanThe.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAALAAAA",
+              "Title": "RWDataExcel.cs",
+              "DocumentMoniker": "D:\\A De An Tot nghiep\\thoikhoabieu-ga\\ThoiKhoaBieu\\RWDataExcel.cs",
+              "RelativeDocumentMoniker": "RWDataExcel.cs",
+              "ToolTip": "D:\\A De An Tot nghiep\\thoikhoabieu-ga\\ThoiKhoaBieu\\RWDataExcel.cs",
+              "RelativeToolTip": "RWDataExcel.cs",
+              "ViewState": "AQIAAFEDAAAAAAAAAAAawFoDAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-30T14:59:38.824Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Busy.cs",
-              "DocumentMoniker": "D:\\De An Tot nghiep\\ThoiKhoaBieu\\Busy.cs",
-              "RelativeDocumentMoniker": "Busy.cs",
-              "ToolTip": "D:\\De An Tot nghiep\\ThoiKhoaBieu\\Busy.cs",
-              "RelativeToolTip": "Busy.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAALAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-30T15:00:30.24Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "CaThe.cs",
-              "DocumentMoniker": "D:\\De An Tot nghiep\\ThoiKhoaBieu\\CaThe.cs",
-              "RelativeDocumentMoniker": "CaThe.cs",
-              "ToolTip": "D:\\De An Tot nghiep\\ThoiKhoaBieu\\CaThe.cs",
-              "RelativeToolTip": "CaThe.cs",
-              "ViewState": "AQIAAE8AAAAAAAAAAAAYwAkAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-30T15:00:29.66Z"
+              "WhenOpened": "2025-06-29T03:08:19.754Z",
+              "EditorCaption": ""
             }
           ]
         }

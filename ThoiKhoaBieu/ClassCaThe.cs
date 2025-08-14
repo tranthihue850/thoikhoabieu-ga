@@ -6,7 +6,7 @@ using System.Threading;
 
 namespace ThoiKhoaBieu
 {
-    public class CaThe
+    public class ClassCaThe
     {
         private int bitCount;
         public int BitCount
@@ -44,20 +44,20 @@ namespace ThoiKhoaBieu
             get { return fx; }
             set { fx = value; }
         }
-        public CaThe(int bitCount)
+        public ClassCaThe(int bitCount)
         {
             this.bitCount = bitCount;
             getBinary();
             getDecimal();
         }
 
-        public CaThe(int bitCount,int dValue)
+        public ClassCaThe(int bitCount,int dValue)
         {
             this.bitCount = bitCount;
             this.decimalValue = dValue;
             binaryValue = convertToBirary(decimalValue);
         }
-        public CaThe(int bitCount,string strB)
+        public ClassCaThe(int bitCount,string strB)
         {
             this.bitCount = bitCount;
             this.decimalValue = convertToDecimal(strB);

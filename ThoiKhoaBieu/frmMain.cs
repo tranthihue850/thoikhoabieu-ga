@@ -14,7 +14,7 @@ namespace ThoiKhoaBieu
     public partial class frmMain : Form
     {
         public RWDataExcel data;
-        public QuanThe lichSang;
+        public ClassQuanThe lichSang;
         public frmMain()
         {
             InitializeComponent();
@@ -348,7 +348,7 @@ namespace ThoiKhoaBieu
                 int soGioTrongTiet = Convert.ToInt32(MaxGioMon.Text);
                 double lai = Convert.ToDouble(textBox13.Text); // txt13
                 double dotBien = Convert.ToDouble(textBox14.Text); // txt14
-                lichSang = new QuanThe(size, sang, data, soNgayTrongTuan, soGioTrongBuoi, soGioTrongTiet, lai, dotBien);
+                lichSang = new ClassQuanThe(size, sang, data, soNgayTrongTuan, soGioTrongBuoi, soGioTrongTiet, lai, dotBien);
             }
         }
 
