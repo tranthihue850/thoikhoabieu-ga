@@ -32,6 +32,8 @@
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
             this.tabControlData = new System.Windows.Forms.TabControl();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tabPageClass = new System.Windows.Forms.TabPage();
             this.dataClass = new System.Windows.Forms.DataGridView();
             this.tabPageSubject = new System.Windows.Forms.TabPage();
@@ -76,8 +78,14 @@
             this.btnRunHoanHao = new System.Windows.Forms.Button();
             this.btnKetqua = new System.Windows.Forms.Button();
             this.label12 = new System.Windows.Forms.Label();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.chươngTrìnhToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.giớiThiệuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.hướngDẫnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.flowLayoutPanel2.SuspendLayout();
             this.tabControlData.SuspendLayout();
+            this.tabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabPageClass.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataClass)).BeginInit();
             this.tabPageSubject.SuspendLayout();
@@ -93,12 +101,13 @@
             this.tabPageBusy.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataBusy)).BeginInit();
             this.tabPageThamso.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // flowLayoutPanel2
             // 
             this.flowLayoutPanel2.Controls.Add(this.checkedListBox1);
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(12, 94);
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(12, 107);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
             this.flowLayoutPanel2.Size = new System.Drawing.Size(174, 445);
             this.flowLayoutPanel2.TabIndex = 1;
@@ -113,6 +122,7 @@
             // 
             // tabControlData
             // 
+            this.tabControlData.Controls.Add(this.tabPage1);
             this.tabControlData.Controls.Add(this.tabPageClass);
             this.tabControlData.Controls.Add(this.tabPageSubject);
             this.tabControlData.Controls.Add(this.tabPageTeacher);
@@ -121,11 +131,30 @@
             this.tabControlData.Controls.Add(this.tabPageTeacherSubject);
             this.tabControlData.Controls.Add(this.tabPageBusy);
             this.tabControlData.Controls.Add(this.tabPageThamso);
-            this.tabControlData.Location = new System.Drawing.Point(205, 70);
+            this.tabControlData.Location = new System.Drawing.Point(205, 85);
             this.tabControlData.Name = "tabControlData";
             this.tabControlData.SelectedIndex = 0;
-            this.tabControlData.Size = new System.Drawing.Size(762, 504);
+            this.tabControlData.Size = new System.Drawing.Size(890, 504);
             this.tabControlData.TabIndex = 2;
+            // 
+            // tabPage1
+            // 
+            this.tabPage1.Controls.Add(this.pictureBox1);
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Size = new System.Drawing.Size(882, 478);
+            this.tabPage1.TabIndex = 8;
+            this.tabPage1.Text = "Phần minh họa";
+            this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(14, 14);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(851, 445);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // tabPageClass
             // 
@@ -456,7 +485,7 @@
             // 
             // btnCreateData
             // 
-            this.btnCreateData.Location = new System.Drawing.Point(12, 35);
+            this.btnCreateData.Location = new System.Drawing.Point(12, 50);
             this.btnCreateData.Name = "btnCreateData";
             this.btnCreateData.Size = new System.Drawing.Size(75, 23);
             this.btnCreateData.TabIndex = 3;
@@ -466,7 +495,7 @@
             // 
             // btnOpenData
             // 
-            this.btnOpenData.Location = new System.Drawing.Point(94, 35);
+            this.btnOpenData.Location = new System.Drawing.Point(94, 50);
             this.btnOpenData.Name = "btnOpenData";
             this.btnOpenData.Size = new System.Drawing.Size(75, 23);
             this.btnOpenData.TabIndex = 4;
@@ -477,7 +506,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(15, 7);
+            this.label4.Location = new System.Drawing.Point(12, 32);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(63, 13);
             this.label4.TabIndex = 5;
@@ -486,7 +515,7 @@
             // lblMain
             // 
             this.lblMain.AutoSize = true;
-            this.lblMain.Location = new System.Drawing.Point(94, 7);
+            this.lblMain.Location = new System.Drawing.Point(91, 32);
             this.lblMain.Name = "lblMain";
             this.lblMain.Size = new System.Drawing.Size(46, 13);
             this.lblMain.TabIndex = 6;
@@ -494,7 +523,7 @@
             // 
             // btnRunAll
             // 
-            this.btnRunAll.Location = new System.Drawing.Point(177, 34);
+            this.btnRunAll.Location = new System.Drawing.Point(177, 49);
             this.btnRunAll.Name = "btnRunAll";
             this.btnRunAll.Size = new System.Drawing.Size(157, 23);
             this.btnRunAll.TabIndex = 7;
@@ -504,7 +533,7 @@
             // 
             // btnDoiCuoi
             // 
-            this.btnDoiCuoi.Location = new System.Drawing.Point(341, 34);
+            this.btnDoiCuoi.Location = new System.Drawing.Point(341, 49);
             this.btnDoiCuoi.Name = "btnDoiCuoi";
             this.btnDoiCuoi.Size = new System.Drawing.Size(182, 23);
             this.btnDoiCuoi.TabIndex = 8;
@@ -514,17 +543,17 @@
             // 
             // btnRunHoanHao
             // 
-            this.btnRunHoanHao.Location = new System.Drawing.Point(532, 34);
+            this.btnRunHoanHao.Location = new System.Drawing.Point(532, 49);
             this.btnRunHoanHao.Name = "btnRunHoanHao";
             this.btnRunHoanHao.Size = new System.Drawing.Size(157, 23);
             this.btnRunHoanHao.TabIndex = 9;
-            this.btnRunHoanHao.Text = "Tiến hóa kết xuất hoàn toàn";
+            this.btnRunHoanHao.Text = "Tiến hóa kết xuất tốt nhất";
             this.btnRunHoanHao.UseVisualStyleBackColor = true;
             this.btnRunHoanHao.Click += new System.EventHandler(this.btnRunHoanHao_Click);
             // 
             // btnKetqua
             // 
-            this.btnKetqua.Location = new System.Drawing.Point(699, 34);
+            this.btnKetqua.Location = new System.Drawing.Point(699, 49);
             this.btnKetqua.Name = "btnKetqua";
             this.btnKetqua.Size = new System.Drawing.Size(97, 23);
             this.btnKetqua.TabIndex = 10;
@@ -535,17 +564,48 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(15, 75);
+            this.label12.Location = new System.Drawing.Point(15, 85);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(105, 13);
             this.label12.TabIndex = 11;
             this.label12.Text = "Lựa chọn lớp lập lịch";
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.chươngTrìnhToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(1117, 24);
+            this.menuStrip1.TabIndex = 12;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // chươngTrìnhToolStripMenuItem
+            // 
+            this.chươngTrìnhToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.giớiThiệuToolStripMenuItem,
+            this.hướngDẫnToolStripMenuItem});
+            this.chươngTrìnhToolStripMenuItem.Name = "chươngTrìnhToolStripMenuItem";
+            this.chươngTrìnhToolStripMenuItem.Size = new System.Drawing.Size(70, 20);
+            this.chươngTrìnhToolStripMenuItem.Text = "Thông tin";
+            // 
+            // giớiThiệuToolStripMenuItem
+            // 
+            this.giớiThiệuToolStripMenuItem.Name = "giớiThiệuToolStripMenuItem";
+            this.giớiThiệuToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
+            this.giớiThiệuToolStripMenuItem.Text = "Giới thiệu";
+            // 
+            // hướngDẫnToolStripMenuItem
+            // 
+            this.hướngDẫnToolStripMenuItem.Name = "hướngDẫnToolStripMenuItem";
+            this.hướngDẫnToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
+            this.hướngDẫnToolStripMenuItem.Text = "Hướng dẫn";
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1002, 602);
+            this.ClientSize = new System.Drawing.Size(1117, 602);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.btnKetqua);
             this.Controls.Add(this.btnRunHoanHao);
@@ -557,12 +617,16 @@
             this.Controls.Add(this.btnCreateData);
             this.Controls.Add(this.tabControlData);
             this.Controls.Add(this.flowLayoutPanel2);
+            this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "frmMain";
             this.Text = "Ứng dụng thuật toán Gen di truyền (GA) trong sắp xếp thời khóa biểu";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.flowLayoutPanel2.ResumeLayout(false);
             this.tabControlData.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tabPageClass.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataClass)).EndInit();
             this.tabPageSubject.ResumeLayout(false);
@@ -579,6 +643,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataBusy)).EndInit();
             this.tabPageThamso.ResumeLayout(false);
             this.tabPageThamso.PerformLayout();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -632,6 +698,12 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Button btnKetqua;
         private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem chươngTrìnhToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem giớiThiệuToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem hướngDẫnToolStripMenuItem;
+        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
