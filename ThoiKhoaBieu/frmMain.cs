@@ -410,6 +410,12 @@ namespace ThoiKhoaBieu
                 lichSang.KetXuatKetQuaCuoiCung(save.FileName);
             }
         }
+
+        private void timKiemTKBToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var frmTim = new frmTimkiem();
+            frmTim.ShowDialog();
+        }
     }
 
     class DrawAll

@@ -82,6 +82,8 @@
             this.chươngTrìnhToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.giớiThiệuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.hướngDẫnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.chứcNăngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.timkiemTKBMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.flowLayoutPanel2.SuspendLayout();
             this.tabControlData.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -162,7 +164,7 @@
             this.tabPageClass.Location = new System.Drawing.Point(4, 22);
             this.tabPageClass.Name = "tabPageClass";
             this.tabPageClass.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageClass.Size = new System.Drawing.Size(754, 478);
+            this.tabPageClass.Size = new System.Drawing.Size(882, 478);
             this.tabPageClass.TabIndex = 0;
             this.tabPageClass.Text = "Lớp";
             this.tabPageClass.UseVisualStyleBackColor = true;
@@ -181,7 +183,7 @@
             this.tabPageSubject.Location = new System.Drawing.Point(4, 22);
             this.tabPageSubject.Name = "tabPageSubject";
             this.tabPageSubject.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageSubject.Size = new System.Drawing.Size(754, 478);
+            this.tabPageSubject.Size = new System.Drawing.Size(882, 478);
             this.tabPageSubject.TabIndex = 1;
             this.tabPageSubject.Text = "Môn học";
             this.tabPageSubject.UseVisualStyleBackColor = true;
@@ -199,7 +201,7 @@
             this.tabPageTeacher.Controls.Add(this.dataTea);
             this.tabPageTeacher.Location = new System.Drawing.Point(4, 22);
             this.tabPageTeacher.Name = "tabPageTeacher";
-            this.tabPageTeacher.Size = new System.Drawing.Size(754, 478);
+            this.tabPageTeacher.Size = new System.Drawing.Size(882, 478);
             this.tabPageTeacher.TabIndex = 2;
             this.tabPageTeacher.Text = "Giáo viên";
             this.tabPageTeacher.UseVisualStyleBackColor = true;
@@ -217,7 +219,7 @@
             this.tabPageClassSubject.Controls.Add(this.dataCS);
             this.tabPageClassSubject.Location = new System.Drawing.Point(4, 22);
             this.tabPageClassSubject.Name = "tabPageClassSubject";
-            this.tabPageClassSubject.Size = new System.Drawing.Size(754, 478);
+            this.tabPageClassSubject.Size = new System.Drawing.Size(882, 478);
             this.tabPageClassSubject.TabIndex = 3;
             this.tabPageClassSubject.Text = "Lớp - Môn học";
             this.tabPageClassSubject.UseVisualStyleBackColor = true;
@@ -235,7 +237,7 @@
             this.tabPageClassTeacher.Controls.Add(this.dataCT);
             this.tabPageClassTeacher.Location = new System.Drawing.Point(4, 22);
             this.tabPageClassTeacher.Name = "tabPageClassTeacher";
-            this.tabPageClassTeacher.Size = new System.Drawing.Size(754, 478);
+            this.tabPageClassTeacher.Size = new System.Drawing.Size(882, 478);
             this.tabPageClassTeacher.TabIndex = 4;
             this.tabPageClassTeacher.Text = "Lớp - Giáo viên";
             this.tabPageClassTeacher.UseVisualStyleBackColor = true;
@@ -253,7 +255,7 @@
             this.tabPageTeacherSubject.Controls.Add(this.dataTS);
             this.tabPageTeacherSubject.Location = new System.Drawing.Point(4, 22);
             this.tabPageTeacherSubject.Name = "tabPageTeacherSubject";
-            this.tabPageTeacherSubject.Size = new System.Drawing.Size(754, 478);
+            this.tabPageTeacherSubject.Size = new System.Drawing.Size(882, 478);
             this.tabPageTeacherSubject.TabIndex = 5;
             this.tabPageTeacherSubject.Text = "Giáo viên - Môn học";
             this.tabPageTeacherSubject.UseVisualStyleBackColor = true;
@@ -271,7 +273,7 @@
             this.tabPageBusy.Controls.Add(this.dataBusy);
             this.tabPageBusy.Location = new System.Drawing.Point(4, 22);
             this.tabPageBusy.Name = "tabPageBusy";
-            this.tabPageBusy.Size = new System.Drawing.Size(754, 478);
+            this.tabPageBusy.Size = new System.Drawing.Size(882, 478);
             this.tabPageBusy.TabIndex = 6;
             this.tabPageBusy.Text = "Bận (giáo viên)";
             this.tabPageBusy.UseVisualStyleBackColor = true;
@@ -308,7 +310,7 @@
             this.tabPageThamso.Controls.Add(this.label1);
             this.tabPageThamso.Location = new System.Drawing.Point(4, 22);
             this.tabPageThamso.Name = "tabPageThamso";
-            this.tabPageThamso.Size = new System.Drawing.Size(754, 478);
+            this.tabPageThamso.Size = new System.Drawing.Size(882, 478);
             this.tabPageThamso.TabIndex = 7;
             this.tabPageThamso.Text = "Tham số";
             this.tabPageThamso.UseVisualStyleBackColor = true;
@@ -573,7 +575,8 @@
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.chươngTrìnhToolStripMenuItem});
+            this.chươngTrìnhToolStripMenuItem,
+            this.chứcNăngToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(1117, 24);
@@ -592,14 +595,29 @@
             // giớiThiệuToolStripMenuItem
             // 
             this.giớiThiệuToolStripMenuItem.Name = "giớiThiệuToolStripMenuItem";
-            this.giớiThiệuToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
+            this.giớiThiệuToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.giớiThiệuToolStripMenuItem.Text = "Giới thiệu";
             // 
             // hướngDẫnToolStripMenuItem
             // 
             this.hướngDẫnToolStripMenuItem.Name = "hướngDẫnToolStripMenuItem";
-            this.hướngDẫnToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
+            this.hướngDẫnToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.hướngDẫnToolStripMenuItem.Text = "Hướng dẫn";
+            // 
+            // chứcNăngToolStripMenuItem
+            // 
+            this.chứcNăngToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.timkiemTKBMenuItem});
+            this.chứcNăngToolStripMenuItem.Name = "chứcNăngToolStripMenuItem";
+            this.chứcNăngToolStripMenuItem.Size = new System.Drawing.Size(77, 20);
+            this.chứcNăngToolStripMenuItem.Text = "Chức năng";
+            // 
+            // timkiemTKBMenuItem
+            // 
+            this.timkiemTKBMenuItem.Name = "timkiemTKBMenuItem";
+            this.timkiemTKBMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.timkiemTKBMenuItem.Text = "Tìm kiếm TKB";
+            this.timkiemTKBMenuItem.Click += new System.EventHandler(this.timKiemTKBToolStripMenuItem_Click);
             // 
             // frmMain
             // 
@@ -704,6 +722,8 @@
         private System.Windows.Forms.ToolStripMenuItem hướngDẫnToolStripMenuItem;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.ToolStripMenuItem chứcNăngToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem timkiemTKBMenuItem;
     }
 }
 
