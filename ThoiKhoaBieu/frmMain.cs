@@ -22,11 +22,11 @@ namespace ThoiKhoaBieu
         }
         public void Properti_Draw()
         {
-            int w = 1500; // Convert.ToInt32(textBox2.Text);
-            int h = 1500; // Convert.ToInt32(textBox2.Text);
+            int w = 1800; // Convert.ToInt32(textBox2.Text);
+            int h = 1200; // Convert.ToInt32(textBox2.Text);
             double gv = 0.25; // //Convert.ToDouble(txtsogv.Text);
             double l = 0.5; // Convert.ToDouble(textBox7.Text);
-            double m = 0.75; // Convert.ToDouble(textBox8.Text);
+            double m = 0.5; // Convert.ToDouble(textBox8.Text);
             DrawAll draw = new DrawAll(w, h, data, gv, l, m);
             draw.CreateTitle("Mô tả dữ liệu đầu vào", 32, Color.Red);
             draw.DrawAllArrow();
