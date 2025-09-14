@@ -416,6 +416,24 @@ namespace ThoiKhoaBieu
             var frmTim = new frmTimkiem();
             frmTim.ShowDialog();
         }
+
+        private void giớiThiệuToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var frmTim = new frmTailieuthamkhao();
+            frmTim.ShowDialog();
+        }
+
+        private void thongTinToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var frmTim = new frmThongtin();
+            frmTim.ShowDialog();
+        }
+
+        private void hướngDẫnToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var frmTim = new frmHuongdan();
+            frmTim.ShowDialog();
+        }
     }
 
     class DrawAll

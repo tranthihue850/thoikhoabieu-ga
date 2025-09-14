@@ -48,6 +48,12 @@
   <ItemGroup>
     <Compile Include="ClassBusy.cs" />
     <Compile Include="ClassCaThe.cs" />
+    <Compile Include="frmHuongdan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHuongdan.Designer.cs">
+      <DependentUpon>frmHuongdan.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -57,6 +63,18 @@
     <Compile Include="ClassGen.cs" />
     <Compile Include="ClassNgay.cs" />
     <Compile Include="ClassNhiemSacThe.cs" />
+    <Compile Include="frmTailieuthamkhao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTailieuthamkhao.Designer.cs">
+      <DependentUpon>frmTailieuthamkhao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmThongtin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmThongtin.Designer.cs">
+      <DependentUpon>frmThongtin.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmTimkiem.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -68,8 +86,17 @@
     <Compile Include="ClassQuanThe.cs" />
     <Compile Include="RWDataExcel.cs" />
     <Compile Include="ClassTietHoc.cs" />
+    <EmbeddedResource Include="frmHuongdan.resx">
+      <DependentUpon>frmHuongdan.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTailieuthamkhao.resx">
+      <DependentUpon>frmTailieuthamkhao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmThongtin.resx">
+      <DependentUpon>frmThongtin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmTimkiem.resx">
       <DependentUpon>frmTimkiem.cs</DependentUpon>
@@ -82,6 +109,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -136,6 +164,12 @@
       <Isolated>False</Isolated>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="thuy-loi-logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Untitled.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
