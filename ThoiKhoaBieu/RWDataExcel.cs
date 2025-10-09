@@ -820,16 +820,35 @@ namespace ThoiKhoaBieu
                 }
                 ++conTro;
                 range = xSheet.get_Range("C" + conTro.ToString(), "C" + conTro.ToString());
+                //for (int j = 0; j < ClassGen.soNgay; ++j)
+                //{
+                //    for (int k = 0; k < a.gen[i].ngay[j].tiet.Length; ++k)
+                //        if (a.gen[i].ngay[j].tiet[k] != null)
+                //        {
+                //            for (int tc = 0; tc < data.giangVien.Length; ++tc)
+                //                if (a.gen[i].ngay[j].tiet[k].maGiangVien == tc)
+                //                    range.set_Item(k + 1, j + 1, data.mon[a.gen[i].ngay[j].tiet[k].maMon] + "(" + a.gen[i].ngay[j].tiet[k].soGio.ToString() + " - " + data.giangVien[tc]+")");
+                //        }
+                //    //range.set_Item(k + 1, j + 1, data.mon[a.gen[i].ngay[j].tiet[k].maMon] + "(" + a.gen[i].ngay[j].tiet[k].soGio.ToString() + ")");
+                //}
+                //conTro += 4;
+
                 for (int j = 0; j < ClassGen.soNgay; ++j)
                 {
                     for (int k = 0; k < a.gen[i].ngay[j].tiet.Length; ++k)
+                    {
                         if (a.gen[i].ngay[j].tiet[k] != null)
                         {
-                            for (int tc = 0; tc < data.giangVien.Length; ++tc)
-                                if (a.gen[i].ngay[j].tiet[k].maGiangVien == tc)
-                                    range.set_Item(k + 1, j + 1, data.mon[a.gen[i].ngay[j].tiet[k].maMon] + "(" + a.gen[i].ngay[j].tiet[k].soGio.ToString() + " - " + data.giangVien[tc]+")");
+                            int maGiangVien = a.gen[i].ngay[j].tiet[k].maGiangVien;
+                            if (maGiangVien >= 0 && maGiangVien < data.giangVien.Length)
+                            {
+                                range.set_Item(k + 1, j + 1,
+                                    data.mon[a.gen[i].ngay[j].tiet[k].maMon] +
+                                    "(" + a.gen[i].ngay[j].tiet[k].soGio.ToString() + " - " +
+                                    data.giangVien[maGiangVien] + ")");
+                            }
                         }
-                    //range.set_Item(k + 1, j + 1, data.mon[a.gen[i].ngay[j].tiet[k].maMon] + "(" + a.gen[i].ngay[j].tiet[k].soGio.ToString() + ")");
+                    }                    
                 }
                 conTro += 4;
             }

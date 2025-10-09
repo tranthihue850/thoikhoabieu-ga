@@ -234,7 +234,7 @@ namespace ThoiKhoaBieu
                 newCell = new DataGridViewTextBoxCell(); //Specify which type of cell in this column  
                 newCol.CellTemplate = newCell;
                 newCol.HeaderText = data.mon[i];
-                newCol.Visible = true;
+                newCol.Visible = true;                
                 dataTS.Columns.Add(newCol);
             }
             // du lieu
@@ -244,7 +244,7 @@ namespace ThoiKhoaBieu
                 dataTS[0, i].Value = data.giangVien[i];
                 for (int j = 0; j < data.soMon; ++j)
                 {
-                    dataTS[j + 1, i].Value = data.qhGiangVienMon[i, j].ToString();
+                    dataTS[j + 1, i].Value = false; // data.qhGiangVienMon[i, j].ToString();
                 }
             }
             //#endregion
@@ -266,7 +266,7 @@ namespace ThoiKhoaBieu
                 newCell = new DataGridViewTextBoxCell(); //Specify which type of cell in this column  
                 newCol.CellTemplate = newCell;
                 newCol.HeaderText = "Day" + (i + 1).ToString();
-                newCol.Visible = true;
+                newCol.Visible = true;                
                 dataBusy.Columns.Add(newCol);
             }
             // du lieu

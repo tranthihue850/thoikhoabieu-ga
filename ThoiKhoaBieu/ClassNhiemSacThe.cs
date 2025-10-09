@@ -175,7 +175,7 @@ namespace ThoiKhoaBieu
                         }
                         else
                         {
-                            s += "Null Không đủ tiet để hiển thị.";
+                            s += "Lỗi Không đủ tiet để hiển thị.";
                         }    
                     }
                     else

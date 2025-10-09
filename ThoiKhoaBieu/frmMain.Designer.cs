@@ -33,6 +33,7 @@
             this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
             this.tabControlData = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tabPageClass = new System.Windows.Forms.TabPage();
             this.dataClass = new System.Windows.Forms.DataGridView();
             this.tabPageSubject = new System.Windows.Forms.TabPage();
@@ -81,13 +82,13 @@
             this.chươngTrìnhToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.giớiThiệuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.hướngDẫnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.thongTinToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.chứcNăngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.timkiemTKBMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.thongTinToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.flowLayoutPanel2.SuspendLayout();
             this.tabControlData.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabPageClass.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataClass)).BeginInit();
             this.tabPageSubject.SuspendLayout();
@@ -104,7 +105,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataBusy)).BeginInit();
             this.tabPageThamso.SuspendLayout();
             this.menuStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // flowLayoutPanel2
@@ -149,6 +149,15 @@
             this.tabPage1.TabIndex = 8;
             this.tabPage1.Text = "Phần minh họa";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(14, 14);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(851, 445);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // tabPageClass
             // 
@@ -588,16 +597,23 @@
             // giớiThiệuToolStripMenuItem
             // 
             this.giớiThiệuToolStripMenuItem.Name = "giớiThiệuToolStripMenuItem";
-            this.giớiThiệuToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.giớiThiệuToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
             this.giớiThiệuToolStripMenuItem.Text = "Tài liệu tham khảo";
             this.giớiThiệuToolStripMenuItem.Click += new System.EventHandler(this.giớiThiệuToolStripMenuItem_Click);
             // 
             // hướngDẫnToolStripMenuItem
             // 
             this.hướngDẫnToolStripMenuItem.Name = "hướngDẫnToolStripMenuItem";
-            this.hướngDẫnToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.hướngDẫnToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
             this.hướngDẫnToolStripMenuItem.Text = "Hướng dẫn";
             this.hướngDẫnToolStripMenuItem.Click += new System.EventHandler(this.hướngDẫnToolStripMenuItem_Click);
+            // 
+            // thongTinToolStripMenuItem
+            // 
+            this.thongTinToolStripMenuItem.Name = "thongTinToolStripMenuItem";
+            this.thongTinToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
+            this.thongTinToolStripMenuItem.Text = "Thông tin";
+            this.thongTinToolStripMenuItem.Click += new System.EventHandler(this.thongTinToolStripMenuItem_Click);
             // 
             // chứcNăngToolStripMenuItem
             // 
@@ -610,25 +626,9 @@
             // timkiemTKBMenuItem
             // 
             this.timkiemTKBMenuItem.Name = "timkiemTKBMenuItem";
-            this.timkiemTKBMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.timkiemTKBMenuItem.Size = new System.Drawing.Size(146, 22);
             this.timkiemTKBMenuItem.Text = "Tìm kiếm TKB";
             this.timkiemTKBMenuItem.Click += new System.EventHandler(this.timKiemTKBToolStripMenuItem_Click);
-            // 
-            // thongTinToolStripMenuItem
-            // 
-            this.thongTinToolStripMenuItem.Name = "thongTinToolStripMenuItem";
-            this.thongTinToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.thongTinToolStripMenuItem.Text = "Thông tin";
-            this.thongTinToolStripMenuItem.Click += new System.EventHandler(this.thongTinToolStripMenuItem_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(14, 14);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(851, 445);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // frmMain
             // 
@@ -655,6 +655,7 @@
             this.flowLayoutPanel2.ResumeLayout(false);
             this.tabControlData.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tabPageClass.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataClass)).EndInit();
             this.tabPageSubject.ResumeLayout(false);
@@ -673,7 +674,6 @@
             this.tabPageThamso.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
